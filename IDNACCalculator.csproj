@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B21C6BE3-BD7D-404E-8123-B81D6CF4C8E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <LangVersion>latest</LangVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IDNACCalculator</RootNamespace>
+    <AssemblyName>IDNACCalculator</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <UseWindowsForms>true</UseWindowsForms>
+    <DisableOutOfProcTaskHost>true</DisableOutOfProcTaskHost>
+    <EnableDefaultApplicationDefinition>false</EnableDefaultApplicationDefinition>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <SkipBuild>false</SkipBuild>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <!-- Fallback for AnyCPU builds -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <SkipBuild>false</SkipBuild>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Mvvm.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v24.2.Core, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Core.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Bars.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Docking.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Editors.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Grid.v24.2.Core, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Ribbon.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Themes.Win11Dark.v24.2, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v24.2.Design, Version=24.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalysisServices.cs" />
+    <Compile Include="Application.cs" />
+    <Compile Include="CandelaConfiguration.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="DictionaryExtensions.cs" />
+    <Compile Include="DisplayFormatting.cs" />
+    <Compile Include="DXRibbonWindow1.xaml.cs">
+      <DependentUpon>DXRibbonWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElectricalCalculator.cs" />
+    <Compile Include="FireAlarmConfiguration.cs" />
+    <Compile Include="IDNACAnalyzer.cs" />
+    <Compile Include="AmplifierCalculator.cs" />
+    <Compile Include="IDNETAnalyzer.cs" />
+    <Compile Include="ModelAnalysisReporter.cs" />
+    <Compile Include="PanelPlacementAnalyzer.cs" />
+    <Compile Include="ProgressWindow.xaml.cs">
+      <DependentUpon>ProgressWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedDataModels.cs" />
+    <Compile Include="Models\DeviceModels.cs" />
+    <Compile Include="Models\SystemOverviewData.cs" />
+    <Compile Include="Models\EquipmentNode.cs" />
+    <Compile Include="Models\IdnacCircuitItem.cs" />
+    <Compile Include="Models\IdnetChannelItem.cs" />
+    <Compile Include="Services\CircuitOrganizationService.cs" />
+    <Compile Include="Services\CircuitBalancingService.cs" />
+    <Compile Include="Services\ValidationService.cs" />
+    <Compile Include="Services\PowerSupplyCalculationService.cs" />
+    <Compile Include="Services\CableCalculationService.cs" />
+    <Compile Include="Services\ReportingService.cs" />
+    <Compile Include="Services\ConfigurationManagementService.cs" />
+    <Compile Include="Services\IDNACEngineeringEngine.cs" />
+    <Compile Include="Services\CircuitBalancer.cs" />
+    <Compile Include="Services\ModelSyncService.cs" />
+    <Compile Include="Services\PendingChangesService.cs" />
+    <Compile Include="Services\DeviceAddressingService.cs" />
+    <Compile Include="Services\BatteryCalculator.cs" />
+    <Compile Include="Services\FQQImportExportService.cs" />
+    <Compile Include="Services\FamilyCatalogImporter.cs" />
+    <Compile Include="Services\ReportBuilder.cs" />
+    <Compile Include="Services\RiserSyncService.cs" />
+    <Compile Include="Services\TreeAssignmentService.cs" />
+    <Compile Include="Services\UndoStack.cs" />
+    <Compile Include="Services\VoltageDropCalculator.cs" />
+    <Compile Include="Services\AssignmentStore.cs" />
+    <Compile Include="Views\AssignmentTreeEditor.xaml.cs">
+      <DependentUpon>AssignmentTreeEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssignmentTreeView.xaml.cs">
+      <DependentUpon>AssignmentTreeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MappingEditor.xaml.cs">
+      <DependentUpon>MappingEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddressingPanelWindow.xaml.cs">
+      <DependentUpon>AddressingPanelWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\Tree\AssignmentTreeViewModel.cs" />
+    <Compile Include="Converters\TreeNodeConverters.cs" />
+    <Compile Include="Converters\UIConverters.cs" />
+    <Compile Include="IsExternalInitPolyfill.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="DXRibbonWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProgressWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AssignmentTreeEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AssignmentTreeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MappingEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddressingPanelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Post-build event to copy DLL to Revit Addins folder -->
+  <PropertyGroup>
+    <PostBuildEvent>
+      copy "$(TargetPath)" "$(AppData)\Autodesk\Revit\Addins\2024\"
+      copy "$(ProjectDir)IDNACCalculator.addin" "$(AppData)\Autodesk\Revit\Addins\2024\"
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
